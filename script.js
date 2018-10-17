@@ -1,6 +1,57 @@
 var loginstatus=false
-window.addEventListener("Load", selEnglish())
-function selEnglish(){
+var stock = [5, 5, 5, 5, 5, 5, 5, 5, 5, 5];
+var taxstock=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+window.addEventListener("Load", populate())
+
+password.onkeyup=function(){
+    if(event.keyCode==13){
+        if (this.value == "1234"){
+            password.style.display='none'
+            if(english.style.color=="rgb(187, 120, 255)"){
+                login.innerHTML="Logged In"
+            }
+            else{
+                login.innerHTML="Connecté"
+            }
+            loginstatus=true;
+        }
+        else{
+            if(english.style.color=="rgb(187, 120, 255)"){
+                alert('Wrong Password')
+            }
+            else{
+                alert("Mauvais Mot de Passe")
+            }
+        }
+    }
+}
+newfruit.onkeyup=function(){
+    for ( var i = 1; row = fruitTable.rows[i]; i++ ) {
+        j=document.getElementById("fruitTable").rows[i].cells[1].innerHTML.toLowerCase()
+        if(!(j.includes(this.value.toLowerCase()))){
+            document.getElementById("fruitTable").rows[i].style.display ='none';
+        }
+        if(event.keyCode==8||event.charCode==46){
+            if((j.includes(this.value.toLowerCase()))){
+                document.getElementById("fruitTable").rows[i].style.display ='';
+            }
+        }
+    }
+}
+
+function populate(){
+    for ( var i = 1; row = fruitTable.rows[i]; i++ ) {
+        if(Math.floor((Math.random() * 10) + 1)<5){
+            document.getElementById("fruitTable").rows[i].cells[4].innerHTML="0"
+        }
+        else{
+            document.getElementById("fruitTable").rows[i].cells[4].innerHTML="13"
+            taxstock[i-1]=13 
+        }
+    }
+}
+
+english.onclick=function(){
     if(loginstatus){
         login.innerHTML="Logged In"
     }
@@ -29,7 +80,6 @@ function selEnglish(){
     english.style.color="#BB78FF"
     french.style.color="#47B3D7"
 }
-english.onclick=function(){selEnglish()}
 french.onclick=function(){
     if(loginstatus){
         login.innerHTML="Connecté"
@@ -59,48 +109,3 @@ french.onclick=function(){
     english.style.color="#47B3D7" 
     french.style.color="#BB78FF" 
 }
-password.onkeyup=function(){
-    if(event.keyCode==13){
-        if (this.value == "1234"){
-            password.style.display='none'
-            if(english.style.color=="rgb(187, 120, 255)"){
-                login.innerHTML="Logged In"
-            }
-            else{
-                login.innerHTML="Connecté"
-            }
-            loginstatus=true;
-        }
-        else{
-            if(english.style.color=="rgb(187, 120, 255)"){
-                alert('Wrong Password')
-            }
-            else{
-                alert("Mauvais Mot de Passe")
-            }
-        }
-    }
-}
-newfruit.onkeyup=function(){
-    for ( var i = 1; row = fruitTable.rows[i]; i++ ) {
-        j=document.getElementById("fruitTable").rows[i].cells[1].innerHTML.toLowerCase()
-        if(!(j.includes(this.value.toLowerCase()))){
-            document.getElementById("fruitTable").rows[i].style.display ='none'; 
-        }
-        if(event.keyCode==8||event.charCode==46){
-            if((j.includes(this.value.toLowerCase()))){
-                document.getElementById("fruitTable").rows[i].style.display ='';
-            }
-        }
-    }
-}
-// window.addEventListener("Load", function(){
-//     for ( var i = 1; row = fruitTable.rows[i]; i++ ) {
-//         if(Math.random){
-//             document.getElementById("fruitTable").rows[i].cells[4].innerHTML="0"
-//         }
-//         else{
-//             document.getElementById("fruitTable").rows[i].cells[4].innerHTML="13"
-//         }
-//     }
-// })
