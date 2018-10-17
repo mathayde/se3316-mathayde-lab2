@@ -6,6 +6,9 @@
 <script type='text/javascript' src='script.js'></script>
 </head>
 <body>
+<header>
+        <p align="right"><small id="login"></small><input type="text" id="password"></p>
+</header>
 <h1>Fruit Shelf</h1>
 <ol id=”fruits”></ol>
 <small id=pickaf>Pick a fruit:</small>
@@ -13,26 +16,29 @@
 <table id="fruitTable" style="width:100%">
     <tr>
         <th width="60%" id="Fruit" colspan="2"></th> 
-        <th width="10%" id="Amount"></th>
-        <th width="10%" id="Price"></th>
-        <th width="10%" id="Tax"></th>
-        <th width="10%" id="Purchase"colspan="2"></th>
+        <th width="10%" id="Amount" align="left"></th>
+        <th width="10%" id="Price" align="left"></th>
+        <th width="10%" id="Tax" align="left"></th>
+        <th width="10%" id="Purchase"colspan="2" align="left"></th>
     </tr>
     </tr>
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrpxXeszmE0l9k0QnYEeix-JmlYWGjkLoBu8znqJcMXg2DyRcz" /></td>
         <td width="50%"><p id="Apple"></p></td> 
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
-        <td width="10%">50</td>
-        <td width="10%">50</td>
-        <td width="5%">50</td>
-        <td width="5%">50</td>
+        <td width="10%"></td>
+        <td width="1%">
+            <p><button>+</button></p>
+            <p><button>-</button></p>
+        </td>
+        <td width="9%">50</td>
 
     </tr>
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="https://i5.walmartimages.ca/images/Enlarge/580/6_r/875806_R.jpg" /></td>
         <td width="50%"><p id="Banana"></p></td> 
-        <td width="10%">94</td>
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
         <td width="10%">50</td>
         <td width="5%">50</td>
@@ -41,7 +47,7 @@
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="https://cdn.shopify.com/s/files/1/0206/9470/products/limes-resized_1024x1024.jpg?v=1492144826" /></td>
         <td width="50%"><p id="Lime"></p></td> 
-        <td width="10%">94</td>
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
         <td width="10%">50</td>
         <td width="5%">50</td>
@@ -50,7 +56,7 @@
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="https://www.alimentarium.org/en/system/files/thumbnails/image/WEB-Carr%C3%A9-durian.png" /></td>
         <td width="50%"><p id="Durian"></p></td> 
-        <td width="10%">94</td>
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
         <td width="10%">50</td>
         <td width="5%">50</td>
@@ -59,7 +65,7 @@
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="http://4.imimg.com/data4/WT/HT/GLADMIN-180458/blackberry-fruit-500x500.jpg" /></td>
         <td width="50%"><p id="Blackberry"></p></td> 
-        <td width="10%">94</td>
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
         <td width="10%">50</td>
         <td width="5%">50</td>
@@ -68,7 +74,7 @@
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="https://i5.walmartimages.ca/images/Large/188/9_r/6000191271889_R.jpg" /></td>
         <td width="50%"><p id="Mango"></p></td> 
-        <td width="10%">94</td>
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
         <td width="10%">50</td>
         <td width="5%">50</td>
@@ -77,7 +83,7 @@
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="https://www.producemarketguide.com/sites/default/files/Commodities.tar/Commodities/lemon_commodity-page.png" /></td>
         <td width="50%"><p id="Lemon"></p></td> 
-        <td width="10%">94</td>
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
         <td width="10%">50</td>
         <td width="5%">50</td>
@@ -86,7 +92,7 @@
     <tr>
         <td width="10%"><img style="display:block;" width="100%"  src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Cherry_Stella444.jpg" /></td>
         <td width="50%"><p id="Cherry"></p></td> 
-        <td width="10%">94</td>
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
         <td width="10%">50</td>
         <td width="5%">50</td>
@@ -95,7 +101,7 @@
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="http://rbemis.com/orange/orange.jpg" /></td>
         <td width="50%"><p id="Orange"></p></td> 
-        <td width="10%">94</td>
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
         <td width="10%">50</td>
         <td width="5%">50</td>
@@ -104,7 +110,7 @@
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="http://cdn.shopify.com/s/files/1/0379/9529/products/Olives_b5f171e3-4984-482c-ba44-c2dd1879af7b_grande.jpg?v=1394740946" /></td>
         <td width="50%"><p id="Olive"></p></td> 
-        <td width="10%">94</td>
+        <td width="10%" align= "center">5</td>
         <td width="10%">50</td>
         <td width="10%">50</td>
         <td width="5%">50</td>
