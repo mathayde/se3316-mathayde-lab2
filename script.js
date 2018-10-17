@@ -24,7 +24,7 @@ function selEnglish(){
 english.onclick=function(){selEnglish()}
 french.onclick=function(){ 
     document.getElementsByTagName("h1")[0].innerHTML="Plateau de Fruits"
-    pickaf.innerHTML="Cueillir un fruit"
+    pickaf.innerHTML="Cueillir un fruit:"
     Fruit.innerHTML="Fruit"
     Amount.innerHTML="Inventaire"
     Price.innerHTML="Prix"
@@ -43,4 +43,21 @@ french.onclick=function(){
     document.getElementsByTagName("h2")[0].innerHTML="Panier"
     english.style.color="#47B3D7" 
     french.style.color="#BB78FF" 
+}
+newfruit.onkeyup=function(){
+    for ( var i = 1; row = fruitTable.rows[i]; i++ ) {
+        j=document.getElementById("fruitTable").rows[i].cells[1].innerHTML.toLowerCase()
+        if(!(j.includes(this.value.toLowerCase()))){
+            //document.getElementById("fruitTable").rows[i].style.display = 'none';
+            document.getElementById("fruitTable").rows[i].style.display ='none'; 
+        }
+        if(event.keyCode==8||event.charCode==46){
+            if((j.includes(this.value.toLowerCase()))){
+                //document.getElementById("fruitTable").rows[i].style.display = 'none';
+                document.getElementById("fruitTable").rows[i].style.display ='';
+        
+            }
+        }
+    }
+
 }
