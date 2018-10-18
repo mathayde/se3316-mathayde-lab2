@@ -66,53 +66,358 @@ function erroralert(x="1",y="1"){
     return true
 }
 add1.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[1].cells[2].innerHTML,amount1.value)){
-        alert("yo")
+    x=1
+    y=amount1
+    z=Apple.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
     }
 }
 add2.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[2].cells[2].innerHTML,amount2.value)){
-        alert("yo")
+    x=2
+    y=amount2
+    z=Banana.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
     }
 }
 add3.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[3].cells[2].innerHTML,amount3.value)){
-        alert("yo")
+    x=3
+    y=amount3
+    z=Lime.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
     }
 }
 add4.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[4].cells[2].innerHTML,amount4.value)){
-        alert("yo")
+    x=4
+    y=amount4
+    z=Durian.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
     }
 }
 add5.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[5].cells[2].innerHTML,amount5.value)){
-        alert("yo")
+    x=5
+    y=amount5
+    z=Blackberry.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
     }
 }
 add6.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[6].cells[2].innerHTML,amount6.value)){
-        alert("yo")
+    x=6
+    y=amount6
+    z=Mango.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
     }
 }
 add7.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[7].cells[2].innerHTML,amount7.value)){
-        alert("yo")
+    x=7
+    y=amount7
+    z=Lemon.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
     }
 }
 add8.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[8].cells[2].innerHTML,amount8.value)){
-        alert("yo")
+    x=8
+    y=amount8
+    z=Cherry.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
     }
 }
 add9.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[9].cells[2].innerHTML,amount9.value)){
-        alert("yo")
+    x=9
+    y=amount9
+    z=Orange.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
     }
 }
 add10.onclick=function(){
-    if (erroralert(document.getElementById("fruitTable").rows[10].cells[2].innerHTML,amount10.value)){
-        alert("yo")
+    x=10
+    y=amount10
+    z=Olive.innerHTML
+    if (erroralert(document.getElementById("fruitTable").rows[x].cells[2].innerHTML,y.value)){
+        var table = document.getElementById("resettbody");
+
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var txt1 = document.createTextNode(z)
+        var td2 = document.createElement("td");
+        var txt2 = document.createTextNode(y.value)
+        var td3 = document.createElement("td");
+        hold1=parseFloat(y.value)*parseFloat(document.getElementById("fruitTable").rows[x].cells[3].innerHTML)
+        var txt3 = document.createTextNode(hold1)
+        hold2=hold1*(taxstock[x]/100)
+        var td4 = document.createElement("td");
+        var txt4= document.createTextNode(hold2)
+        var td5 = document.createElement("td");
+        var txt5 = document.createTextNode(hold2+hold1)
+
+        td1.appendChild(txt1);
+        td2.appendChild(txt2);
+        td3.appendChild(txt3);
+        td4.appendChild(txt4);
+        td5.appendChild(txt5);
+        tr.appendChild(td1)
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        table.appendChild(tr);
+    }
+}
+function setTotals(){}
+function resetCart(){
+    var new_tbody = document.createElement('tbody');
+    var old_tbody = document.getElementById("resettbody")
+    var parentDiv= old_tbody.parentNode
+    parentDiv.replaceChild(new_tbody, old_tbody)
+}
+buy.onclick=function(){
+    resetCart()
+}
+cancel.onclick=function(){
+    if(confirm("Are you sure you want to empty your cart?")){
+        resetCart()
     }
 }
 english.onclick=function(){

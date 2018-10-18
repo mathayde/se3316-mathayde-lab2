@@ -117,7 +117,7 @@ on load function -->
         <td width="10%"><img style="display:block;" width="100%" src="http://rbemis.com/orange/orange.jpg" /></td>
         <td width="50%"><p id="Orange">Orange</p></td> 
         <td width="10%" align= "center">5</td>
-        <td width="10%" align= "center">0.6</td>
+        <td width="10%" align= "center">0.60</td>
         <td width="10%" align= "center">0</td>
         <td width="10%" align="center">
             <input type="number" min="1" max="5" id="amount9" value="1" size="5" >
@@ -139,19 +139,45 @@ on load function -->
 <h2>Basket</h2>
 <ol id=”basket”></ol>
 <table id="basketTable" style="width:100%">
-    <tr>
-        <th width="20%" id="Purchased">Fruit</th> 
-        <th width="20%" id="Amount">Amount</th>
-        <th width="20%" id="Prices"> Price(CAD)</th>
-        <th width="20%" id="Taxes">Tax(CAD)</th>
-        <th width="20%" id="Cost">Cost(CAD)</th>
-    </tr> 
+    <thead>
+        <tr>
+            <th width="20%" id="Purchased">Fruit</th> 
+            <th width="20%" id="Amount">Amount</th>
+            <th width="20%" id="Prices"> Price(CAD)</th>
+            <th width="20%" id="Taxes">Tax(CAD)</th>
+            <th width="20%" id="Cost">Cost(CAD)</th>
+        </tr> 
+    </thead>
+    <tbody id="resettbody">
+
+    </tbody>
 </table>
-<p align="right">
-    SubTotal:<textarea id="Subtot">0.00</textarea><br>
-    Tax: <textarea id="Taxtot">0.00</textarea><br>
-    Total: <textarea id="Realtot">0.00</textarea><br>
-</p>
+<table style="width:100%">
+    <tr>
+        <th width="20%"></th> 
+        <th width="40%"></th>
+        <th width="40%" colspan="2"></th>
+    </tr> 
+    <tr>
+        <td width="20%"><a id="buy" href=javascript:void(0); >Buy</a> | <a id="cancel" href=javascript:void(0);>Cancel</a></th> 
+        <td width="40%"></th>
+        <td width="20%" align="right">Sub Total:</th>
+        <td width="20%">0.00</th>    
+    </tr>
+    <tr>
+        <td width="20%"></th> 
+        <td width="40%"></th>
+        <td width="20%" align="right">Tax:</th>
+        <td width="20%">0.00</th>    
+    </tr>
+    <tr>
+        <td width="20%"></th> 
+        <td width="40%"></th>
+        <td width="20%" align="right">Total:</th>
+        <td width="20%">0.00</th>    
+    </tr>
+       
+</table>
 <footer>
     <p align="right"><a id="english" style="color: #BB78FF" href=javascript:void(0); >English</a> | <a id="french" href=javascript:void(0);>Français</a></p>
 </footer>
