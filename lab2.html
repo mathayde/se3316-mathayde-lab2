@@ -19,21 +19,21 @@ on load function -->
 <table id="fruitTable" style="width:100%">
     <tr>
         <th width="60%" id="Fruit" colspan="2">Fruit</th> 
-        <th width="10%" id="Amount">Inventory</th>
+        <th width="10%" id="Inventory">Inventory</th>
         <th width="10%" id="Price"> Price(CAD)</th>
         <th width="10%" id="Tax">Tax(%)</th>
-        <th width="10%" id="Purchase">Purchase</th>
+        <th width="10%" id="Purchase" colspan="2">Purchase</th>
     </tr>
     </tr>
     <tr>
         <td width="10%"><img style="display:block;" width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrpxXeszmE0l9k0QnYEeix-JmlYWGjkLoBu8znqJcMXg2DyRcz" /></td>
-        <td width="50%"><p id="Apple"</p>Apple</td> 
+        <td width="45%"><p id="Apple">Apple</p></td> 
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">0.40</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount1" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add1">Add</button>  <button id="plus1">-</button><button id="minus1">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount1" value="1" size="5">
+            <button id="add1">Add</button> 
         </td>
     </tr>
     <tr>
@@ -42,9 +42,9 @@ on load function -->
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">0.19</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount2" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add2">Add</button>  <button id="plus2">-</button><button id="minus2">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount2" value="1" size="5">
+            <button id="add2">Add</button>
         </td>
     </tr>
     <tr>
@@ -53,9 +53,9 @@ on load function -->
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">0.99</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount3" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add3">Add</button>  <button id="plus3">-</button><button id="minus3">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount3" value="1" size="5" >
+            <button id="add3">Add</button>
         </td>
     </tr>
     <tr>
@@ -64,9 +64,9 @@ on load function -->
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">11.99</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount4" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add4">Add</button>  <button id="plus4">-</button><button id="minus4">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount4" value="1" size="5" >
+            <button id="add4">Add</button>
         </td>
     </tr>
     <tr>
@@ -75,9 +75,9 @@ on load function -->
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">0.09</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount5" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add5">Add</button>  <button id="plus5">-</button><button id="minus5">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount5" value="1" size="5" >
+            <button id="add5">Add</button>
         </td>
     </tr>
     <tr>
@@ -86,9 +86,9 @@ on load function -->
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">1.47</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount6" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add6">Add</button>  <button id="plus6">-</button><button id="minus6">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount6" value="1" size="5" >
+            <button id="add6">Add</button>
         </td>
     </tr>
     <tr>
@@ -97,9 +97,9 @@ on load function -->
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">0.99</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount7" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add7">Add</button>  <button id="plus7">-</button><button id="minus7">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount7" value="1" size="5" >
+            <button id="add7">Add</button>
         </td>
     </tr>
     <tr>
@@ -108,9 +108,9 @@ on load function -->
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">0.07</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount8" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add8">Add</button>  <button id="plus8">-</button><button id="minus8">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount8" value="1" size="5" >
+            <button id="add8">Add</button>
         </td>
     </tr>
     <tr>
@@ -119,9 +119,9 @@ on load function -->
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">0.6</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount9" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add9">Add</button>  <button id="plus9">-</button><button id="minus9">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount9" value="1" size="5" >
+            <button id="add9">Add</button>
         </td>
     </tr>
     <tr>
@@ -130,14 +130,28 @@ on load function -->
         <td width="10%" align= "center">5</td>
         <td width="10%" align= "center">0.05</td>
         <td width="10%" align= "center">0</td>
-        <td width="10%">
-            <p align= "center"><input type="text" id="amount10" maxlength=5 size="5" placeholder="1"></p>
-            <p align= "center"><button id="add10">Add</button>  <button id="plus10">-</button><button id="minus10">+</button> </p>
+        <td width="10%" align="center">
+            <input type="number" min="1" max="5" id="amount10" value="1" size="5" >
+            <button id="add10">Add</button>
         </td>
     </tr>
 </table>
 <h2>Basket</h2>
 <ol id=”basket”></ol>
+<table id="basketTable" style="width:100%">
+    <tr>
+        <th width="20%" id="Purchased">Fruit</th> 
+        <th width="20%" id="Amount">Amount</th>
+        <th width="20%" id="Prices"> Price(CAD)</th>
+        <th width="20%" id="Taxes">Tax(CAD)</th>
+        <th width="20%" id="Cost">Cost(CAD)</th>
+    </tr> 
+</table>
+<p align="right">
+    SubTotal:<textarea id="Subtot">0.00</textarea><br>
+    Tax: <textarea id="Taxtot">0.00</textarea><br>
+    Total: <textarea id="Realtot">0.00</textarea><br>
+</p>
 <footer>
     <p align="right"><a id="english" style="color: #BB78FF" href=javascript:void(0); >English</a> | <a id="french" href=javascript:void(0);>Français</a></p>
 </footer>

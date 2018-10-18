@@ -14,6 +14,7 @@ password.onkeyup=function(){
                 login.innerHTML="Connecté"
             }
             loginstatus=true;
+            
         }
         else{
             if(english.style.color=="rgb(187, 120, 255)"){
@@ -50,7 +51,70 @@ function populate(){
         }
     }
 }
-
+function erroralert(x="1",y="1"){
+    x=parseInt(x)
+    y=parseInt(y)
+    if(x<y)
+    {
+        alert("There are only "+x+" items in stock at the moment please select a lower value.")
+        return false
+    }
+    if(y<0){
+        alert("Please input a value greater than zero to add to cart.")
+        return false
+    }
+    return true
+}
+add1.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[1].cells[2].innerHTML,amount1.value)){
+        alert("yo")
+    }
+}
+add2.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[2].cells[2].innerHTML,amount2.value)){
+        alert("yo")
+    }
+}
+add3.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[3].cells[2].innerHTML,amount3.value)){
+        alert("yo")
+    }
+}
+add4.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[4].cells[2].innerHTML,amount4.value)){
+        alert("yo")
+    }
+}
+add5.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[5].cells[2].innerHTML,amount5.value)){
+        alert("yo")
+    }
+}
+add6.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[6].cells[2].innerHTML,amount6.value)){
+        alert("yo")
+    }
+}
+add7.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[7].cells[2].innerHTML,amount7.value)){
+        alert("yo")
+    }
+}
+add8.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[8].cells[2].innerHTML,amount8.value)){
+        alert("yo")
+    }
+}
+add9.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[9].cells[2].innerHTML,amount9.value)){
+        alert("yo")
+    }
+}
+add10.onclick=function(){
+    if (erroralert(document.getElementById("fruitTable").rows[10].cells[2].innerHTML,amount10.value)){
+        alert("yo")
+    }
+}
 english.onclick=function(){
     if(loginstatus){
         login.innerHTML="Logged In"
@@ -62,7 +126,7 @@ english.onclick=function(){
     document.getElementsByTagName("h1")[0].innerHTML="Fruit Shelf"
     pickaf.innerHTML="Pick a fruit:"
     Fruit.innerHTML="Fruit"
-    Amount.innerHTML="Inventory"
+    Inventory.innerHTML="Inventory"
     Price.innerHTML="Price(CAD)"
     Tax.innerHTML="Tax(%)"
     Purchase.innerHTML="Purchase"
@@ -91,7 +155,7 @@ french.onclick=function(){
     document.getElementsByTagName("h1") [0].innerHTML="Plateau de Fruits"
     pickaf.innerHTML="Cueillir un fruit:"
     Fruit.innerHTML="Fruit"
-    Amount.innerHTML="Inventaire"
+    Inventory.innerHTML="Inventaire"
     Price.innerHTML="Prix(CAD)"
     Tax.innerHTML="Impôt(%)"
     Purchase.innerHTML="Acheter"
@@ -107,5 +171,6 @@ french.onclick=function(){
     Olive.innerHTML="Olive" 
     document.getElementsByTagName("h2")[0].innerHTML="Panier"
     english.style.color="#47B3D7" 
-    french.style.color="#BB78FF" 
+    french.style.color="#BB78FF"
+    alert(document.getElementById("fruitTable").rows[1].cells[5].innerHTML.value) 
 }
