@@ -141,11 +141,11 @@ on load function -->
 <table id="basketTable" style="width:100%">
     <thead>
         <tr>
-            <th width="20%" id="Purchased">Fruit</th> 
-            <th width="20%" id="Amount">Amount</th>
-            <th width="20%" id="Prices"> Price(CAD)</th>
-            <th width="20%" id="Taxes">Tax(CAD)</th>
-            <th width="20%" id="Cost">Cost(CAD)</th>
+            <th align="left" width="20%" id="Purchased">Fruit</th> 
+            <th align="left" width="20%" id="Amount">Amount</th>
+            <th align="left" width="20%" id="Prices"> Price(CAD)</th>
+            <th align="left" width="20%" id="Taxes">Tax(CAD)</th>
+            <th align="left" width="20%" id="Cost">Cost(CAD)</th>
         </tr> 
     </thead>
     <tbody id="resettbody">
@@ -162,19 +162,19 @@ on load function -->
         <td width="20%"><a id="buy" href=javascript:void(0); >Buy</a> | <a id="cancel" href=javascript:void(0);>Cancel</a></th> 
         <td width="40%"></th>
         <td width="20%" align="right">Sub Total:</th>
-        <td width="20%">0.00</th>    
+        <td width="20%" id="subtot">0.00</th>    
     </tr>
     <tr>
         <td width="20%"></th> 
         <td width="40%"></th>
         <td width="20%" align="right">Tax:</th>
-        <td width="20%">0.00</th>    
+        <td width="20%" id="taxtot">0.00</th>    
     </tr>
     <tr>
         <td width="20%"></th> 
         <td width="40%"></th>
         <td width="20%" align="right">Total:</th>
-        <td width="20%">0.00</th>    
+        <td width="20%" id="realtot">0.00</th>    
     </tr>
        
 </table>
